@@ -1,17 +1,8 @@
-'''
-Python3 API for IDG-KMC Target Central Repository Database versions >= 6.*.*
 
-Steve Mathias
-smathias@salud.unm.edu
-Time-stamp: <2021-02-25 08:07:53 smathias>
-'''
-import sys
-import platform
 import mysql.connector
 from mysql.connector import Error
 from mysql.connector import errorcode
 from contextlib import closing
-from collections import defaultdict
 import logging
 from TCRD.Create import CreateMethodsMixin
 from TCRD.Read import ReadMethodsMixin
@@ -91,7 +82,7 @@ class DBAdaptor(CreateMethodsMixin, ReadMethodsMixin, UpdateMethodsMixin, Delete
   #
   def _connect(self):
     '''
-    Function  : Connect to a TCRD database
+    Function  : Connect to a SR24_BIRD database
     Arguments : N/A
     Returns   : N/A
     Scope     : Private
