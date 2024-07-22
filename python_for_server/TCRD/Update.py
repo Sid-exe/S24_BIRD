@@ -1,9 +1,6 @@
 '''
 Update methods for TCRD.DBadaptor 
 
-Steve Mathias
-smathias@salud.unm.edu
-Time-stamp: <2022-04-01 12:20:33 smathias>
 '''
 from mysql.connector import Error
 from contextlib import closing

@@ -1,13 +1,9 @@
 '''
 Read/Search (ie. SELECT) methods for TCRD.DBadaptor 
 
-Steve Mathias
-smathias@salud.unm.edu
-Time-stamp: <2022-04-01 12:20:20 smathias>
 '''
 from contextlib import closing
 from collections import defaultdict
-import logging
 
 class ReadMethodsMixin:
   def get_target_ids(self):

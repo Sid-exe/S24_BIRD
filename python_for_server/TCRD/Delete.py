@@ -1,9 +1,6 @@
 '''
 Delete methods for TCRD.DBadaptor 
 
-Steve Mathias
-smathias@salud.unm.edu
-Time-stamp: <2021-04-27 15:14:29 smathias>
 '''
 from mysql.connector import Error
 from contextlib import closing

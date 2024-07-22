@@ -1,10 +1,6 @@
 '''
 Create (ie. INSERT) methods for TCRD.DBadaptor 
 
-Steve Mathias
-smathias@salud.unm.edu
-Time-stamp: <2022-04-01 12:19:09 smathias>
-Time-stamp: <2021-09-28 12:10:00 smathias>
 '''
 from mysql.connector import Error
 from contextlib import closing
