@@ -3,12 +3,12 @@
 """
 
 Usage:
-    load-eRAM.py [--debug | --quiet] [--dbhost=<str>] [--dbname=<str>] [--pwfile=<str>] [--dbuser=<str>] [--logfile=<file>] [--loglevel=<int>]
-    load-eRAM.py -? | --help
+    load-DTO_Classifications.py [--debug | --quiet] [--dbhost=<str>] [--dbname=<str>] [--pwfile=<str>] [--dbuser=<str>] [--logfile=<file>] [--loglevel=<int>]
+    load-DTO_Classification.py -? | --help
 
 Options:
   -h --dbhost DBHOST   : MySQL database host name [default: localhost]
-  -n --dbname DBNAME   : MySQL database name [default: tcrdev]
+  -n --dbname DBNAME   : MySQL database name [default: SR24_BIRD]
   -u --dbuser DBUSER   : MySQL login user name [default: root]
   -p --pwfile PWFILE   : MySQL password File path [default: ./tcrd_pass]
   -l --logfile LOGF    : set log file name
@@ -31,14 +31,14 @@ import logging
 import slm_util_functions as slmf
 
 
-__author__='Sid'
-__email__='sid@gmail.com'
+__author__='Sidharth K S'
+__email__='sidharthks82@gmail.com'
 __version__='8.0.0'
 
-ROSE_VER='8'
+BIRD_VER='8'
 
 PROGRAM=os.path.basename(sys.argv[0])
-LOGDIR=f"../log/rose{ROSE_VER}logs/"
+LOGDIR=f"../log/rose{BIRD_VER}logs/"
 LOGFILE=f"{LOGDIR}{PROGRAM}.log"
 
 

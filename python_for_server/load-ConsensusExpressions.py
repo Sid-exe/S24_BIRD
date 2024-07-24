@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-
 """
 
 Usage:
@@ -8,7 +7,7 @@ Usage:
 
 Options:
   -h --dbhost DBHOST   : MySQL database host name [default: localhost]
-  -n --dbname DBNAME   : MySQL database name [default: BIRD]
+  -n --dbname DBNAME   : MySQL database name [default: S24_BIRD]
   -u --dbuser DBUSER   : MySQL login user name [default: root]
   -p --pwfile PWFILE   : MySQL password File path [default: ./tcrd_pass]
   -l --logfile LOGF    : set log file name

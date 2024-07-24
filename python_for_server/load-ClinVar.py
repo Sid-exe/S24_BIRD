@@ -289,15 +289,15 @@ if __name__ == '__main__':
         print(f"Connected to database {args['--dbname']} Schema_ver:{dbi['schema_ver']},data ver:{dbi['data_ver']}")
 
     # Dataset
-    #dataset_id = dba.ins_dataset( {'name': 'ClinVar', 'source': 'Download file: ftp.ncbi.nlm.nih.gov/pub/clinvar/tab_delimited/variant_summary.txt.gz', 'app': PROGRAM, 'app_version': __version__, 'url': 'https://www.ncbi.nlm.nih.gov/clinvar/', 'comments': 'Only phenotype associations with review status of "criteria provided, multiple submitters, no conflicts" or "reviewed by expert panel" are loaded into TCRD.'} )
-    #assert dataset_id, "Error inserting dataset See logfile {} for details.".format(logfile)
+    dataset_id = dba.ins_dataset( {'name': 'ClinVar', 'source': 'Download file: ftp.ncbi.nlm.nih.gov/pub/clinvar/tab_delimited/variant_summary.txt.gz', 'app': PROGRAM, 'app_version': __version__, 'url': 'https://www.ncbi.nlm.nih.gov/clinvar/', 'comments': 'Only phenotype associations with review status of "criteria provided, multiple submitters, no conflicts" or "reviewed by expert panel" are loaded into TCRD.'} )
+    assert dataset_id, "Error inserting dataset See logfile {} for details.".format(logfile)
     # Provenance
-    #provs = [ {'dataset_id': dataset_id, 'table_name': 'clinvar'},
-    #            {'dataset_id': dataset_id, 'table_name': 'clinvar_phenotype'},
-    #            {'dataset_id': dataset_id, 'table_name': 'clinvar_phenotype_xref'} ]
-    #for prov in provs:
-    #    rv = dba.ins_provenance(prov)
-    #    assert rv, "Error inserting provenance. See logfile {} for details.".format(logfile)
+    provs = [ {'dataset_id': dataset_id, 'table_name': 'clinvar'},
+               {'dataset_id': dataset_id, 'table_name': 'clinvar_phenotype'},
+               {'dataset_id': dataset_id, 'table_name': 'clinvar_phenotype_xref'} ]
+    for prov in provs:
+        rv = dba.ins_provenance(prov)
+        assert rv, "Error inserting provenance. See logfile {} for details.".format(logfile)
     
 
     

@@ -34,10 +34,10 @@ __author__='Sidharth K S'
 __email__='sidharthks82@gmail.com'
 __version__='8.0.0'
 
-ROSE_VER='8'
+S24_VER='8'
 
 PROGRAM=os.path.basename(sys.argv[0])
-LOGDIR=f"../log/rose{ROSE_VER}logs/"
+LOGDIR=f"../log/rose{S24_VER}logs/"
 LOGFILE=f"{LOGDIR}{PROGRAM}.log"
 Vitamin_csv_file='../data/Vitamin/Vitamin.csv'
 

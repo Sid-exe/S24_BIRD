@@ -17,7 +17,7 @@ class DBAdaptor(CreateMethodsMixin, ReadMethodsMixin, UpdateMethodsMixin, Delete
   _db_config = {
     'host': 'localhost',
     'user': 'root',
-    'password': 'tcrd@blr',
+    'password': '*******',
     'database': 'S24_BIRD'
   }
 

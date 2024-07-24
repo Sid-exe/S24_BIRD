@@ -8,7 +8,7 @@ Usage:
 
 Options:
   -h --dbhost DBHOST   : MySQL database host name [default: localhost]
-  -n --dbname DBNAME   : MySQL database name [default: tcrdev]
+  -n --dbname DBNAME   : MySQL database name [default: SR24_BIRD]
   -u --dbuser DBUSER   : MySQL login user name [default: root]
   -p --pwfile PWFILE   : MySQL password File path [default: ./tcrd_pass]
   -l --logfile LOGF    : set log file name
@@ -33,14 +33,14 @@ import slm_util_functions as slmf
 import re
 
 
-__author__='Sid'
-__email__='sid@gmail.com'
+__author__='Sidharth K S'
+__email__='sidharthks82@gmail.com'
 __version__='8.0.0'
 
-ROSE_VER='8'
+BIRD_VER='8'
 
 PROGRAM=os.path.basename(sys.argv[0])
-LOGDIR=f"../log/rose{ROSE_VER}logs/"
+LOGDIR=f"../log/rose{BIRD_VER}logs/"
 LOGFILE=f"{LOGDIR}{PROGRAM}.log"
 
 FILE ='../data/GWAS/gwas_catalog_v1.0.2-associations_e112_r2024-06-17.tsv'
