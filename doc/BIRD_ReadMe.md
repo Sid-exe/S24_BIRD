@@ -1,5 +1,5 @@
 
-# Biomedical Information Knowledge Repository - BIRD
+# Biomedical Information Resource Database - BIRD
 
 ## Overview
 
@@ -11,7 +11,7 @@ This GitHub repository includes all necessary Python load files to access, parse
 
 ### Pre-Downloading Data
 
-It is recommended to pre-download these files in advance and store them in folders within the data directory so that the load files can access them and extract the relevant data. The naming structure of these data folders can be determined by examining the file paths and filenames given in the codes where the data is accessed.
+It is recommended to pre-download these files in advance and store them in folders within the data directory so that the load files can access them and extract the relevant data. The naming structure of these data folders can be determined by examining the file paths and filenames given in the codes where the data is accessed. A Detailed Excel Sheet showing the Datasets, Load Files and Sources along with their Links will be provided in this folder. However these links may get updated over time.
 
 ### Running Scripts
 
@@ -32,3 +32,6 @@ There are three types of load files:
 1. **Common:** Load files that access pre-downloaded data.
 2. **Rare Case:** Load files that download and process data.
 3. **API:** Load files that use APIs to directly download from website servers.
+
+
+
