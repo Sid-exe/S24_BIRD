@@ -19,11 +19,11 @@ Running the codes in a powerful Linux Operating System with a MySQL server is hi
 
 ### Additional Data Sources
 
-The provided load files alone are not sufficient to populate all the tables in the database. Most of the necessary data sources do not exist or were difficult to find. Therefore, this data was collected from another database called **Biokg**, acquired by our team for this purpose. SQL queries were used to transfer the required data from **Biokg** to **S24_BIRD**. Furthermore, several tables were manually added from other sources by importing CSV files into a database management platform called **DBeaver**. Information about the tables, ER diagram, and .sql dump files are provided in the SQL folder of the repository.
+The provided load files alone are not sufficient to populate all the tables in the database. Most of the necessary data sources do not exist or were difficult to find. Therefore, this data was collected from another database called **Biokg**, acquired by our team for this purpose. SQL queries were used to transfer the required data from **Biokg** to **S24_BIRD**. Furthermore, several tables were manually added from other sources by importing CSV files into a database management platform called **DBeaver**.Apart from **S24_BIRD**, We included two more Databases called **S24_chembl** and **S24_clinicaltrials**. Although these exists independantly some data from S24_chembl was added to S24_BIRD via a loader. The rest of the databases act as another pivotal source of Biomedical data that could be incorporated with **S24_BIRD** in the future.Information about the Databased, tables, ER diagram, and .sql dump files are provided in the SQL folder of the repository.
 
 ## Running Scripts in Order
 
-To ensure that the tables in the database populate records without redundancies and key constraint violations, it is essential to run the scripts in a specific order. This order is provided in the commands file in the doc directory. The code uses command line arguments, so it is preferable to follow the run commands exactly as specified.
+To ensure that the tables in the database populate records without redundancies and key constraint violations, it is essential to run the scripts in a specific order. This order is provided in the commands file in this directory. The code uses command line arguments, so it is preferable to follow the run commands exactly as specified.
 
 ## Types of Load Files
 
